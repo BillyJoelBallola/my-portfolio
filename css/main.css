@@ -25,7 +25,6 @@ body {
   font-family: "Poppins", sans-serif;
   background: #151515;
   background-image: url("../image/texture.jpg");
-  background-blend-mode: color-dodge;
 }
 
 .btn {
@@ -366,5 +365,8 @@ main .contact__content .contact__links a:hover::before {
   main .contact__content .contact__links a {
     color: #fff;
     font-size: 1.5rem;
+  }
+  main .contact__content .contact__links a::before {
+    bottom: 0;
   }
 }/*# sourceMappingURL=main.css.map */
