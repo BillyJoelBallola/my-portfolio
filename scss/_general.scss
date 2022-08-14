@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,600;0,900;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,600;0,900;1,900&display=swap');
 
 *{
     margin: 0;
@@ -27,9 +28,8 @@
 
 
 body{
-    font-family: 'Poppins', sans-serif;
+    font-family: $ff-kanit;
     background: $color_secondary;
-    background-image: url('../image/texture.jpg');
 }
 
 .btn{
@@ -47,6 +47,23 @@ body{
 .btn:hover{
     background: $color_nav;
     box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+}
+
+.stroke-style h1,
+.stroke-style h2,
+.stroke-style p,
+.stroke-style{
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 2px $color_white;
+}
+
+@media screen and (max-width: 780px) {
+    .stroke-style h1,
+    .stroke-style h2,
+    .stroke-style p,
+    .stroke-style{
+        -webkit-text-stroke: 1px $color_white;
+    }
 }
 
 a{
