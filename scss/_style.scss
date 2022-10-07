@@ -1,6 +1,6 @@
 header{
     position: fixed;
-    height: 7rem;
+    height: 4rem;
     width: 100vw;
     top: 0;
     left: 0;
@@ -41,6 +41,9 @@ header{
 
 @media screen and (max-width: 780px) {
     header{
+        background: $color-blur-bg;
+        backdrop-filter: $blur;
+
         .nav{
             align-items: center;
 
@@ -204,11 +207,11 @@ main{
         &__content{
             
             :nth-child(1){
-                margin-bottom: 3rem;
+                margin-bottom: 5rem;
             }
 
             p{
-                font-size: 5rem;
+                font-size: 4rem;
                 line-height: 5rem;
             }
         }
@@ -222,6 +225,7 @@ main{
 
         &__content{
             margin-bottom: 2rem;
+
             p{
                 font-size: 4rem;
                 line-height: 4.2rem;
@@ -229,9 +233,8 @@ main{
         }
 
         &__img-container{
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
             gap: 2rem;
 
             .project__wrapper{
@@ -258,7 +261,6 @@ main{
                         text-align: center;
                         line-height: 1.5rem;
                         color: $color_white;
-                       
                     }
                 }
 
@@ -276,64 +278,13 @@ main{
                 filter: blur(0px);
             }
         }
-        
-
-        // &__links{
-        //     display: flex;
-        //     flex-direction: column;
-        //     margin-top: 2rem;
-        //     font-size: 2rem;    
-
-        //     p{
-        //         display: flex;
-        //         position: relative;
-        //     }
-
-        //     p::after,
-        //     p::before{
-        //         content: "";
-        //         position: relative;
-        //         background: $color_white;
-        //         height: 4px;
-        //     }
-
-        //     p::before{
-        //         top: 50%;
-        //         margin-right: .5rem;
-        //         width: 8rem;
-        //     }
-
-        //     p::after{
-        //         top: 50%;
-        //         margin-left: .5rem;
-        //         width: 23rem;
-        //     }
-
-        //     a{
-        //         width: fit-content;
-        //         font-style: italic;
-        //         color: $color_white;
-        //         position: relative;
-
-        //         i{
-        //             font-size: 3rem;
-        //             margin-left: .5rem;
-        //             transform: rotateY(90deg);
-        //             transition: $transition;
-        //         }
-        //     }
-
-        //     a:hover i{
-        //        transform: rotateY(0deg);
-        //     }
-        // }
-
     }
 
     .contact{
         display: grid;
         place-items: center;
         height: 100vh;
+        margin-top: 5rem;
 
         &__content{
             .contact__links{
@@ -342,24 +293,16 @@ main{
 
                 a{
                     color: $color_white;
+                    -webkit-text-stroke: 1px $color_white;
+
                     font-size: 3rem;
                     position: relative;
+                    transition: $transition;
                 }
 
-                a::before{
-                    content: "";
-                    background-color: $color_white;
-                    position: absolute;
-                    width: 0;
-                    height: 4px;
-                    left: 0;
-                    right: 0;
-                    bottom: 10px;
-                    transition: all .5s ease-in-out;
-                }
-    
-                a:hover::before{
-                    width: 100%;
+                a:hover{
+                    color: transparent;
+                    -webkit-text-stroke: 1px $color_white;
                 }
             }
         }
@@ -411,14 +354,15 @@ main{
             }
 
             &__img-container{
-                flex-direction: column;
+                grid-template-columns: 1fr 1fr;
                 gap: 1rem;
+
                 .project__wrapper{
                     overflow: hidden;
                     position: relative; 
                     
                     .image{
-                        height: 120px;
+                        height: 150px;
                         width: 100%;
                         filter: blur(3px);
                     }
@@ -439,24 +383,6 @@ main{
                     filter: blur(0px);
                 }
             }
-        
-
-            // &__links{
-            //     line-height: 1.2rem;
-            //     margin-top: 1rem;
-            //     font-size: 1rem; 
-                
-            //     p{
-            //         margin-bottom: .5rem;
-            //     }
-
-            //     a{
-            //         i{
-            //             display: none;
-            //         }
-            //     }
-
-            // }
         }
 
         .contact{
@@ -483,6 +409,26 @@ main{
                     }
                 }
             }
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .about{
+        margin-bottom: 10rem;
+        &__content{
+            
+            p{
+                font-size: 2.25rem;
+                line-height: 2.5rem;
+            }
+        }
+    }
+
+    .project{
+        &__img-container{
+            grid-template-columns: 1fr !important;
+            gap: 1rem;
         }
     }
 }

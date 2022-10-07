@@ -69,7 +69,7 @@ h2 {
 
 header {
   position: fixed;
-  height: 7rem;
+  height: 4rem;
   width: 100vw;
   top: 0;
   left: 0;
@@ -102,6 +102,11 @@ header .nav__menu {
 }
 
 @media screen and (max-width: 780px) {
+  header {
+    background: rgba(21, 21, 21, 0.3019607843);
+    -webkit-backdrop-filter: blur(8px);
+            backdrop-filter: blur(8px);
+  }
   header .nav {
     align-items: center;
   }
@@ -230,10 +235,10 @@ main .about {
   padding: 3rem 0;
 }
 main .about__content :nth-child(1) {
-  margin-bottom: 3rem;
+  margin-bottom: 5rem;
 }
 main .about__content p {
-  font-size: 5rem;
+  font-size: 4rem;
   line-height: 5rem;
 }
 main .project {
@@ -250,9 +255,8 @@ main .project__content p {
   line-height: 4.2rem;
 }
 main .project__img-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
 }
 main .project__img-container .project__wrapper {
@@ -293,6 +297,7 @@ main .contact {
   display: grid;
   place-items: center;
   height: 100vh;
+  margin-top: 5rem;
 }
 main .contact__content .contact__links {
   text-align: center;
@@ -300,22 +305,14 @@ main .contact__content .contact__links {
 }
 main .contact__content .contact__links a {
   color: #fff;
+  -webkit-text-stroke: 1px #fff;
   font-size: 3rem;
   position: relative;
+  transition: all 250ms ease-in-out;
 }
-main .contact__content .contact__links a::before {
-  content: "";
-  background-color: #fff;
-  position: absolute;
-  width: 0;
-  height: 4px;
-  left: 0;
-  right: 0;
-  bottom: 10px;
-  transition: all 0.5s ease-in-out;
-}
-main .contact__content .contact__links a:hover::before {
-  width: 100%;
+main .contact__content .contact__links a:hover {
+  color: transparent;
+  -webkit-text-stroke: 1px #fff;
 }
 
 @media screen and (max-width: 780px) {
@@ -347,7 +344,7 @@ main .contact__content .contact__links a:hover::before {
     line-height: 2.5rem;
   }
   main .project__img-container {
-    flex-direction: column;
+    grid-template-columns: 1fr 1fr;
     gap: 1rem;
   }
   main .project__img-container .project__wrapper {
@@ -355,7 +352,7 @@ main .contact__content .contact__links a:hover::before {
     position: relative;
   }
   main .project__img-container .project__wrapper .image {
-    height: 120px;
+    height: 150px;
     width: 100%;
     filter: blur(3px);
   }
@@ -386,5 +383,18 @@ main .contact__content .contact__links a:hover::before {
   }
   main .contact__content .contact__links a::before {
     bottom: 0;
+  }
+}
+@media screen and (max-width: 500px) {
+  .about {
+    margin-bottom: 10rem;
+  }
+  .about__content p {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+  .project__img-container {
+    grid-template-columns: 1fr !important;
+    gap: 1rem;
   }
 }/*# sourceMappingURL=main.css.map */
