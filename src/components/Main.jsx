@@ -17,5 +17,3 @@ const Main = () => {
 };
 
 export default Main;
-
-// py-[200px] md:py-[220px]
