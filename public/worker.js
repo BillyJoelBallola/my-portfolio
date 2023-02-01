@@ -1,4 +1,4 @@
-let CACHE_NAME = "my-portfolio";
+let CACHE_NAME = "billyjoel";
 let urlsToCache = ["/", "/completed"];
 
 // Install a service worker
