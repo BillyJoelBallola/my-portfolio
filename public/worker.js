@@ -1,4 +1,4 @@
-let CACHE_NAME = "billyjoel";
+let CACHE_NAME = "https://billyjoel.netlify.app/";
 let urlsToCache = ["/", "/completed"];
 
 // Install a service worker
