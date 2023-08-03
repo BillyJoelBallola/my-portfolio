@@ -11,8 +11,8 @@ const Footer = () => {
 					GET IN TOUCH
 				</h2>
 				<p data-aos="fade-up">
-					You can send me message via social media accounts and if about
-					bussines, please do contact me throuh my gmail account.{" "}
+					You can send me a message through my social media accounts and if about
+					business, please contact me through my Gmail account.{" "}
 					<a
 						href="mailto:billyjoelballola27@gmail.com"
 						className="text-orange-500 dark:text-sky-500 hover:underline">
@@ -21,13 +21,13 @@ const Footer = () => {
 				</p>
 			</div>
 			<div className="flex justify-center gap-10">
-				<a href="/" className="social-media" data-aos="zoom-in">
+				<a href="https://www.facebook.com/billyjoel.ballola" className="social-media" data-aos="zoom-in">
 					<FaFacebookSquare />
 				</a>
-				<a href="/" className="social-media" data-aos="zoom-in">
+{/* 				<a href="/" className="social-media" data-aos="zoom-in">
 					<FaLinkedin />
-				</a>
-				<a href="/" className="social-media" data-aos="zoom-in">
+				</a> */}
+				<a href="https://www.instagram.com/blly_joel" className="social-media" data-aos="zoom-in">
 					<FaInstagram />
 				</a>
 			</div>
