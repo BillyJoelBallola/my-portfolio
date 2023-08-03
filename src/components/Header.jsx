@@ -19,7 +19,7 @@ const Header = () => {
 					</div>
 					<div>
 						<p data-aos="fade-up">
-							Hi I’am Billy Joel Ballola, currently 3rd year college at Laguna
+							Hi I am Billy Joel Ballola, currently, I am 4th-year college at Laguna
 							State Polytechnique University taking Bachelor of Science in
 							Information Technology. My interest in programming started when I
 							got to college. Now I want to be a web developer focused in
