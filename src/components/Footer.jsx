@@ -21,13 +21,13 @@ const Footer = () => {
 				</p>
 			</div>
 			<div className="flex justify-center gap-10">
-				<a href="https://www.facebook.com/billyjoel.ballola" className="social-media" data-aos="zoom-in">
+				<a href="https://www.facebook.com/billyjoel.ballola" className="social-media" data-aos="zoom-in" target="_blank" rel="noreferrer" >
 					<FaFacebookSquare />
 				</a>
-{/* 				<a href="/" className="social-media" data-aos="zoom-in">
+				<a href="/" className="social-media" data-aos="zoom-in">
 					<FaLinkedin />
-				</a> */}
-				<a href="https://www.instagram.com/blly_joel" className="social-media" data-aos="zoom-in">
+				</a>
+				<a href="https://www.instagram.com/blly_joel" className="social-media" data-aos="zoom-in" target="_blank" rel="noreferrer">
 					<FaInstagram />
 				</a>
 			</div>

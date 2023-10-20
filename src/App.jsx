@@ -5,7 +5,7 @@ import Theme from "./components/Theme";
 const App = () => {
 	return (
 		<div className="main-bg w-full">
-			<div className="w-full h-full bg-[#ffffff36] dark:bg-[#0f172ae2] backdrop-blur-5">
+			<div className="w-full h-full bg-[#fcfcfc33] dark:bg-[#0f172ae2] backdrop-blur-5">
 				<Theme />
 				<Main />
 			</div>
